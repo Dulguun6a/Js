@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans p-6">
+
+  <section class="mb-6 p-4 bg-white">
+    <h2 class="font-semibold mb-2">2 toonii ih</h2>
+    <input id="a1" placeholder="a" class="border p-1 mr-2">
+    <input id="b1" placeholder="b" class="border p-1 mr-2">
+    <button onclick="findMax()" class="bg-blue-500 text-white px-3 py-1 rounded">Олох</button>
+    <p id="1" class="mt-2 font-semibold text-blue-500"></p>
+  </section>
+
+  <section class="mb-6 p-4 bg-white">
+    <h2 class="font-semibold mb-2">2 toonii baga</h2>
+    <input id="a2" placeholder="a" class="border p-1 mr-2">
+    <input id="b2" placeholder="b" class="border p-1 mr-2">
+    <button onclick="findMin()" class="bg-blue-500 text-white px-3 py-1 rounded">Олох</button>
+    <p id="2" class="mt-2 font-semibold text-blue-500"></p>
+  </section>
+
+  <section class="mb-6 p-4 bg-white">
+    <h2 class="font-semibold mb-2">3 toonii baga</h2>
+    <input id="a3" placeholder="a" class="border p-1 mr-2">
+    <input id="b3" placeholder="b" class="border p-1 mr-2">
+    <input id="c3" placeholder="c" class="border p-1 mr-2">
+    <button onclick="findMin3()" class="bg-blue-500 text-white px-3 py-1 rounded">Олох</button>
+    <p id="3" class="mt-2 font-semibold text-blue-500"></p>
+  </section>
+
+  <section class="mb-6 p-4 bg-white">
+    <h2 class="font-semibold mb-2">3 toonii ih</h2>
+    <input id="a4" placeholder="a" class="border p-1 mr-2">
+    <input id="b4" placeholder="b" class="border p-1 mr-2">
+    <input id="c4" placeholder="c" class="border p-1 mr-2">
+    <button onclick="findMax3()" class="bg-blue-500 text-white px-3 py-1 rounded">Олох</button>
+    <p id="4" class="mt-2 font-semibold text-blue-500"></p>
+  </section>
+
+  <section class="mb-6 p-4 bg-white">
+    <h2 class="font-semibold mb-2">3 toonii dundah</h2>
+    <input id="a5" placeholder="a" class="border p-1 mr-2">
+    <input id="b5" placeholder="b" class="border p-1 mr-2">
+    <input id="c5" placeholder="c" class="border p-1 mr-2">
+    <button onclick="findMid()" class="bg-blue-500 text-white px-3 py-1 rounded">Олох</button>
+    <p id="5" class="mt-2 font-semibold text-blue-500"></p>
+  </section>
+
+  <section class="mb-6 p-4 bg-white">
+    <h2 class="font-semibold mb-2">3 toonii erembe</h2>
+    <input id="a6" placeholder="a" class="border p-1 mr-2">
+    <input id="b6" placeholder="b" class="border p-1 mr-2">
+    <input id="c6" placeholder="c" class="border p-1 mr-2">
+    <button onclick="sortNumbers()" class="bg-blue-500 text-white px-3 py-1 rounded">Олох</button>
+    <p id="6" class="mt-2 font-semibold text-blue-500"></p>
+  </section>
+
+  <section class="mb-6 p-4 bg-white">
+    <h2 class="font-semibold mb-2">Anhnii too</h2>
+    <input id="n7" placeholder="n" class="border p-1 mr-2">
+    <button onclick="checkPrime()" class="bg-blue-500 text-white px-3 py-1 rounded">Олох</button>
+    <p id="7" class="mt-2 font-semibold text-blue-500"></p>
+  </section>
+
+  <section class="mb-6 p-4 bg-white">
+    <h2 class="font-semibold mb-2">3 toonii dundaj</h2>
+    <input id="a8" placeholder="a" class="border p-1 mr-2">
+    <input id="b8" placeholder="b" class="border p-1 mr-2">
+    <input id="c8" placeholder="c" class="border p-1 mr-2">
+    <button onclick="findAverage()" class="bg-blue-500 text-white px-3 py-1 rounded">Олох</button>
+    <p id="8" class="mt-2 font-semibold text-blue-500"></p>
+  </section>
+
+  <section class="mb-6 p-4 bg-white">
+    <h2 class="font-semibold mb-2">Palindrome too</h2>
+    <input id="n9" type="text" placeholder="n" class="border p-1 mr-2">
+    <button onclick="checkPalindrome()" class="bg-blue-500 text-white px-3 py-1 rounded">Олох</button>
+    <p id="9" class="mt-2 font-semibold text-blue-500"></p>
+  </section>
+
+  <section class="mb-6 p-4 bg-white">
+    <h2 class="font-semibold mb-2">Anhnii ba Palindrome too</h2>
+    <input id="n10" type="text" placeholder="n" class="border p-1 mr-2">
+    <button onclick="checkPrimePalindrome()" class="bg-blue-500 text-white px-3 py-1 rounded">Олох</button>
+    <p id="10" class="mt-2 font-semibold text-blue-500"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
