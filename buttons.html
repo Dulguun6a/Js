@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <title>Hello, Nest</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen flex items-center justify-center bg-gradient-to-b from-blue-100 to-blue-200">
+
+  <div class="text-center">
+    <h1 class="text-4xl font-bold mb-10">Hello, Nest</h1>
+    <div id="mainBox" class="w-[450px] mx-auto bg-white p-6 rounded-xl shadow">
+      <p id="mainText" class="text-gray-600 text-lg">
+        Энд мэдээлэл гарна.
+      </p>
+    </div>
+    <div id="extraTexts" class="w-[450px] mx-auto mt-4 space-y-2"></div>
+    <div class="mt-8 flex justify-center gap-4">
+      <button
+        onclick="changeText()"
+        class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-lg">
+        Текст өөрчлөх
+      </button>
+      <button
+        onclick="addText()"
+        class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-lg">
+        Шинэ текст нэмэх
+      </button>
+      <button
+        onclick="deleteLastText()"
+        class="bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-lg">
+        Сүүлийн текст устгах
+      </button>
+    </div>
+  </div>
+
+  <script>
+    function changeText() {
+      const newText = prompt("Шинэ текст оруулна уу:");
+      if (newText) {
+        document.getElementById("mainText").textContent = newText;
+      }
+    }
+    function addText() {
+      const newText = prompt("Нэмэх текст:");
+      if (newText) {
+        const p = document.createElement("p");
+        p.textContent = newText;
+        p.className = "bg-white p-4 rounded shadow text-gray-700";
+        document.getElementById("extraTexts").appendChild(p);
+      }
+    }
+    function deleteLastText() {
+      const container = document.getElementById("extraTexts");
+      if (container.lastChild) {
+        container.removeChild(container.lastChild);
+      } else {
+        alert("Устгах текст алга.");
+      }
+    }
+  </script>
+
+</body>
+</html>
